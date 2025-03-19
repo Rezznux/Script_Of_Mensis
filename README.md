@@ -19,6 +19,14 @@ Script_of_Mensis helps security researchers detect and analyze URLs that attempt
 - **IP Rotation**: Supports proxy configuration to avoid IP-based blocking
 - **User-Agent Rotation**: Randomizes browser fingerprints to appear more human-like
 
+### How It Works
+
+- Loads the URL in a headless browser to simulate a real user.
+- Executes JavaScript and extracts final redirection URLs.
+- Captures network requests to detect malicious payloads.
+- Queries VirusTotal & URLScan.io to check for known threats.
+- Saves results in scan_results.json for later review.
+
 ## Installation
 
 ### Prerequisites
